@@ -1,0 +1,42 @@
+{
+  "app": {
+    "name": "INSPINIA 2.4"
+  },
+  "body": {
+    "welcome": "Welcome Amelia"
+  },
+  "demo": {
+    "text1": "Internationalization (sometimes shortened to \"I18N , meaning \"I - eighteen letters -N\") is the process of planning and implementing products and services so that they can easily be adapted to specific local languages and cultures, a process called localization . The internationalization process is sometimes called translation or localization enablement ."
+  },
+  "login": {
+    "welcome": "Welcome Amelia"
+  },
+  "nav": {
+    "animations": "Animations",
+    "appviews": "App views",
+    "commerce": "E-commerce",
+    "dashboard": "Dashboards",
+    "forms": "Forms",
+    "gallery": "Gallery",
+    "graphs": "Graphs",
+    "gridoptions": "Grid options",
+    "landing": "Landing page",
+    "layouts": "Layouts",
+    "mailbox": "Mailbox",
+    "menulevels": "Menu levels",
+    "metrics": "Metrics",
+    "miscellaneous": "Miscellaneous",
+    "otherpages": "Other pages",
+    "package": "Packages",
+    "tables": "Tables",
+    "uielements": "UI elements",
+    "widgets": "Widgets"
+  },
+  "topnav": {
+    "language": "Language",
+    "logout": "Log out",
+    "messageinfo": "You have 42 messages and 6 notifications.",
+    "search": "Search for something...",
+    "welcometext": "Welcome to INSPINIA+ Admin Theme."
+  }
+}

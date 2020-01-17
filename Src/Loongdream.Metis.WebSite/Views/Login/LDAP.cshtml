@@ -27,14 +27,12 @@
 </head>
 <body class="gray-bg">
 
-    <div class="middle-box text-center loginscreen  animated fadeInDown">
+    <div class="middle-box text-center loginscreen  animated fadeInDown" id="login">
         <div>
             <div>
-
-                <h1 class="logo-name">IN+</h1>
-
+                <h1 class="logo-name">Metis</h1>
             </div>
-            <h3>Welcome to IN+</h3>
+            <h3 data-i18n="login.welcome"></h3>
             <p>
                 Perfectly designed and precisely prepared admin theme with over 50 pages with extra new web app views.
             </p>
@@ -85,14 +83,15 @@
         $(document).ready(function () {
 
             $.i18n.init({
-                resGetPath: '../locales/__lng__.json',
+                resGetPath: '../locales/__lng__/all.json',
                 load: 'unspecific',
                 fallbackLng: false,
-                lng: 'en'
+                lng: "zh-Hant"
             }, function (t) {
                 $('.i18container').i18n();
                 $('#side-menu').i18n();
-                $('.navbar-top-links').i18n();
+                    $('.navbar-top-links').i18n();
+                    $('.login').i18n();
             });
 
             $('.set_en').on('click', function () {

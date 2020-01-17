@@ -1,0 +1,42 @@
+{
+  "app": {
+    "name": "Metis需求文档管理系统"
+  },
+  "body": {
+    "welcome": "欢迎小主"
+  },
+  "demo": {
+    "text1": "国际化（有时缩写为“I18N，意思是“I-18个字母-N”）是一个规划和实现产品和服务的过程，以便它们能够很容易地适应特定的当地语言和文化，这一过程称为本地化。国际化过程有时被称为翻译或本地化支持。"
+  },
+  "login": {
+    "welcome": "欢迎使用Metis！"
+  },
+  "nav": {
+    "animations": "动画",
+    "appviews": "应用页",
+    "commerce": "电子商务",
+    "dashboard": "仪表盘",
+    "forms": "表单",
+    "gallery": "画廊",
+    "graphs": "图标",
+    "gridoptions": "表格选项",
+    "landing": "登录页",
+    "layouts": "布局页",
+    "mailbox": "信箱",
+    "menulevels": "多级菜单",
+    "metrics": "指标",
+    "miscellaneous": "混合的",
+    "otherpages": "第三方页面",
+    "package": "引用包",
+    "tables": "列表",
+    "uielements": "UI组件",
+    "widgets": "插件"
+  },
+  "topnav": {
+    "language": "语言",
+    "logout": "登出",
+    "messageinfo": "你有新消息呢",
+    "search": "查点啥...",
+    "welcometext": "欢迎使用Metis！"
+  }
+}

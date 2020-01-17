@@ -1,0 +1,42 @@
+{
+  "app": {
+    "name": "Metis需求文檔管理系統"
+  },
+  "body": {
+    "welcome": "歡迎小主"
+  },
+  "demo": {
+    "text1": "國際化（有時縮寫為“I18N，意思是“I-18個字母-N”）是一個規劃和實現產品和服務的過程，以便它們能够很容易地適應特定的當地語言和文化，這一過程稱為當地語系化。國際化過程有時被稱為翻譯或當地語系化支持。"
+  },
+  "login": {
+    "welcome": "歡迎使用Metis！"
+  },
+  "nav": {
+    "animations": "動畫",
+    "appviews": "應用頁",
+    "commerce": "電子商務",
+    "dashboard": "儀錶盤",
+    "forms": "表單",
+    "gallery": "畫廊",
+    "graphs": "圖標",
+    "gridoptions": "表格選項",
+    "landing": "登錄頁",
+    "layouts": "佈局頁",
+    "mailbox": "信箱",
+    "menulevels": "多級菜單",
+    "metrics": "指標",
+    "miscellaneous": "混合的",
+    "otherpages": "第三方頁面",
+    "package": "引用包",
+    "tables": "列表",
+    "uielements": "UI組件",
+    "widgets": "插件"
+  },
+  "topnav": {
+    "language": "語言",
+    "logout": "登出",
+    "messageinfo": "你有新消息呢",
+    "search": "查點啥……",
+    "welcometext": "歡迎使用Metis"
+  }
+}

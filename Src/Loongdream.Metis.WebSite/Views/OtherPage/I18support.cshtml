@@ -54,6 +54,8 @@
 
                     <a class="btn btn-white set_en active"><img src="~/Images/flags/16/United-States.png"> EN</a>
                     <a class="btn btn-white set_es"><img src="~/Images/flags/16/Spain.png"> ES</a>
+                    <a class="btn btn-white set_zh"><img src="~/Images/flags/16/China.png"> 中文</a>
+                    <a class="btn btn-white set_zh_hant"><img src="~/Images/flags/16/Taiwan.png"> 台湾</a>
 
 
 
@@ -470,10 +472,12 @@ $('.set_es').on('click', function ()
         $(document).ready(function () {
 
             $.i18n.init({
-                resGetPath: '../locales/__lng__.json',
+                resGetPath: '../locales/__lng__/__ns__.json',
                 load: 'unspecific',
                 fallbackLng: false,
-                lng: 'en'
+                lng: 'en-US',
+                cleanCode: true,
+                ns:'all'
             }, function (t) {
                 $('.i18container').i18n();
                 $('#side-menu').i18n();
@@ -481,13 +485,15 @@ $('.set_es').on('click', function ()
             });
 
             $('.set_en').on('click', function () {
-                i18n.setLng('en', function () {
+                i18n.setLng('en-US', function () {
                     $('.i18container').i18n();
                     $('#side-menu').i18n();
                     $('.navbar-top-links').i18n();
-
-                    $('.set_en').addClass('active');
+                    
                     $('.set_es').removeClass('active');
+                    $('.set_en').addClass('active');
+                    $('.set_zh').removeClass('active');
+                    $('.set_zh_hant').removeClass('active');
                 });
             });
 
@@ -496,12 +502,39 @@ $('.set_es').on('click', function ()
                     $('.i18container').i18n();
                     $('#side-menu').i18n();
                     $('.navbar-top-links').i18n();
-
+                    
                     $('.set_es').addClass('active');
                     $('.set_en').removeClass('active');
+                    $('.set_zh').removeClass('active');
+                    $('.set_zh_hant').removeClass('active');
                 });
-            })
+            });
 
+            $('.set_zh').on('click', function () {
+                i18n.setLng('zh-Hans', function () {
+                    $('.i18container').i18n();
+                    $('#side-menu').i18n();
+                    $('.navbar-top-links').i18n();
+                    
+                    $('.set_es').removeClass('active');
+                    $('.set_en').removeClass('active');
+                    $('.set_zh').addClass('active');
+                    $('.set_zh_hant').removeClass('active');
+                });
+            });
+
+            $('.set_zh_hant').on('click', function () {
+                i18n.setLng('zh-Hant', function () {
+                    $('.i18container').i18n();
+                    $('#side-menu').i18n();
+                    $('.navbar-top-links').i18n();
+
+                    $('.set_es').removeClass('active');
+                    $('.set_en').removeClass('active');
+                    $('.set_zh').removeClass('active');
+                    $('.set_zh_hant').addClass('active');
+                });
+            });
         });
 
     </script>
