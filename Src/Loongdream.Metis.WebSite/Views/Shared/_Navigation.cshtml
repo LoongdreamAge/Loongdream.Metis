@@ -21,6 +21,12 @@
             <li class="@Html.IsSelected(controller: "Home", action: "Minor")">
                 <a href="@Url.Action("Minor", "Home")"><i class="fa fa-server"></i> <span class="nav-label">Minor</span></a>
             </li>
+            <li class="@Html.IsSelected(controller: "OtherPage")">
+                <a href="#"><i class="fa fa-globe"></i> <span class="nav-label" data-i18n="nav.miscellaneous">OtherPage</span><span class="label label-info float-right">NEW</span></a>
+                <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "Miscellaneous", cssClass: "in")">
+                    <li class="@Html.IsSelected(action: "I18support")"><a href="@Url.Action("I18support", "OtherPage")">I18support</a></li>
+                    </ul>
+            </li>
         </ul>
     </div>
 </nav>
