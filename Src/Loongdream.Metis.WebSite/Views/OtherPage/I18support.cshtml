@@ -1,7 +1,5 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "I18support";
-    Layout = "_LayoutNoNav";
 }
 
 <div class="row wrapper border-bottom white-bg page-heading">
@@ -462,80 +460,3 @@ $('.set_es').on('click', function ()
     </div>
 </div>
 
-@section Scripts {
-    <environment names="Development,Staging,Production">
-        <script src="~/lib/i18next/i18next.min.js"></script>
-    </environment>
-
-    <script type="text/javascript">
-
-        $(document).ready(function () {
-
-            $.i18n.init({
-                resGetPath: '../locales/__lng__/__ns__.json',
-                load: 'unspecific',
-                fallbackLng: false,
-                lng: 'en-US',
-                cleanCode: true,
-                ns:'all'
-            }, function (t) {
-                $('.i18container').i18n();
-                $('#side-menu').i18n();
-                $('.navbar-top-links').i18n();
-            });
-
-            $('.set_en').on('click', function () {
-                i18n.setLng('en-US', function () {
-                    $('.i18container').i18n();
-                    $('#side-menu').i18n();
-                    $('.navbar-top-links').i18n();
-                    
-                    $('.set_es').removeClass('active');
-                    $('.set_en').addClass('active');
-                    $('.set_zh').removeClass('active');
-                    $('.set_zh_hant').removeClass('active');
-                });
-            });
-
-            $('.set_es').on('click', function () {
-                i18n.setLng('es', function () {
-                    $('.i18container').i18n();
-                    $('#side-menu').i18n();
-                    $('.navbar-top-links').i18n();
-                    
-                    $('.set_es').addClass('active');
-                    $('.set_en').removeClass('active');
-                    $('.set_zh').removeClass('active');
-                    $('.set_zh_hant').removeClass('active');
-                });
-            });
-
-            $('.set_zh').on('click', function () {
-                i18n.setLng('zh-Hans', function () {
-                    $('.i18container').i18n();
-                    $('#side-menu').i18n();
-                    $('.navbar-top-links').i18n();
-                    
-                    $('.set_es').removeClass('active');
-                    $('.set_en').removeClass('active');
-                    $('.set_zh').addClass('active');
-                    $('.set_zh_hant').removeClass('active');
-                });
-            });
-
-            $('.set_zh_hant').on('click', function () {
-                i18n.setLng('zh-Hant', function () {
-                    $('.i18container').i18n();
-                    $('#side-menu').i18n();
-                    $('.navbar-top-links').i18n();
-
-                    $('.set_es').removeClass('active');
-                    $('.set_en').removeClass('active');
-                    $('.set_zh').removeClass('active');
-                    $('.set_zh_hant').addClass('active');
-                });
-            });
-        });
-
-    </script>
-}
